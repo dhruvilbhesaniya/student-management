@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {{>adminHead}}
+
+  {{!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
+  
+  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+
+</head>
+<body style="background-color:#edf2f6 ;">
+
+     {{>adminHeder}}
+
+      <div style="position:fixed ;">
+        {{>adminNev}}
+      </div>
+
+       <div class="dashboard">
+          <div class="d1">
+            <h4>Edit Professor</h4>
+         </div>
+
+         <div class="d-btn" style="width:300px ;">
+              <i class="fa fa-home" style="color:#AAAAAA ;"></i>
+               <a href="index">Home </a>
+               <i class="fa fa-angle-right" style="color:#AAAAAA ;"></i>
+               <span >Edit Professors</span>
+         </div>
+        
+     </div>
+
+<div class="main-form">
+    <h3>Edit Information</h3>
+     <form class="r-form" method="post" action="/admin/updataprofessors/{{palldata._id}}">
+             {{!-- <h2 class="text-center">Ragistetion</h2> --}}
+                
+                    <div class="from1">
+                        <div class="col-sm-8 form-group">
+                            <label for="name-f">First Name</label>
+                            <input type="text" class="form-control" name="first_name" value="{{palldata.first_name}}" placeholder="Enter your first name.">
+                         </div>
+                     {{!-- <div class="col-sm-4 form-group">
+                        <label for="name-f">Midal Name</label>
+                        <input type="text" class="form-control" name="mname" id="name-f" placeholder="Enter your first name.">
+                     </div> --}}
+                    </div>
+
+                   <div class="from1">
+                         <div class="col-sm-8 form-group">
+                        <label for="name-l">Last name</label>
+                        <input type="text" class="form-control" name="last_name" value="{{palldata.last_name}}" id="name-l" placeholder="Enter your last name.">
+                    </div>
+                    <div class="col-sm-8 form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="Email" value="{{palldata.Email}}" id="email" placeholder="Enter your email.">
+                    </div>
+                   </div>
+
+                    <div class="from1">
+                        <div class="col-sm-8 form-group">
+                            <label for="address-1">Address</label>
+                            <input type="address" class="form-control" name="Addres" value="{{palldata.Addres}}" id="address-1"
+                            placeholder="Locality/House/Street no.">
+                         </div>
+                        <div class="col-sm-8 form-group">
+                            <label for="Date">Joining Date </label>
+                            <input type="Date" name="Joining_date" value="{{palldata.Joining_date}}" class="form-control" id="Date" placeholder="">
+                        </div>
+                    </div>
+                                 
+                    
+
+                    <div class="from1">
+                            <div class="col-sm-8 form-group">
+                                 <label for="sex">Gender</label>
+                                <select id="sex" name="gender" value="{{palldata.gender}}" class="form-control browser-default custom-select">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                           </div>
+                        <div class="col-sm-8 form-group">
+                            <label for="tel">Phone</label>
+                            <input type="tel" name="phone" value="{{palldata.phone}}" class="form-control" id="tel" placeholder="Enter Your Contact Number.">
+                        </div>
+                    </div>
+
+                    <div class="from1">
+                             <div class="col-sm-8 form-group">
+                                    <label for="Courses">Departments</label>
+                                    <select  name="Departments" value="{{palldata.Departments}}" class="form-control custom-select browser-default">
+                                        <option value="Computer">Computer</option>
+                                        <option value="science">Science</option>
+                                        <option value="commerce">Commerce</option>
+                                    </select>
+                             </div>
+                        {{!-- <div class="col-sm-4 form-group">
+                            <label for="pass">Password</label>
+                            <input type="Password" name="password" class="form-control" id="pass" placeholder="Enter your password.">
+                        </div> --}}
+                    </div>
+
+                    <div class="from1">
+                         <div class="col-sm-8 form-group">
+                            <label for="name-f">Education</label>
+                            <input type="text" class="form-control" name="Degree" value="{{palldata.Degree}}" placeholder="Education">
+                         </div>
+                        
+                        {{!-- <div class="col-sm-4 form-group">
+                            <label for="pass2">Confirm Password</label>
+                            <input type="Password" name="conformpassword" class="form-control" id="pass2"
+                                placeholder="Re-enter your password.">
+                        </div> --}}
+                        {{!-- <div class="col-sm-12">
+                            <input type="checkbox" class="form-check d-inline" id="chb"><label for="chb"
+                                class="form-check-label">&nbsp;I accept all terms and conditions.
+                            </label>
+                        </div> --}}
+        
+                        <div class="col-sm-8 form-group mb-0">
+                            <button class="btn btn-primary float-right" value="Submit" type="submit">SUBMIT</button>
+                        </div>
+                    </div>
+
+     </form>
+  </div>  
+</body>
+</html>

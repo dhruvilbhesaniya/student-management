@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+        {{>nevbar}}
+
+            <div class="carousel-inner1">
+            <div class="carousel-item1 active">
+                    <img src="/images/slide2.jpg" class="d-block w-100" alt="...">
+                    {{!-- <div class="carousel-caption d-none d-md-block"> --}}
+                       
+                        <div class="carousel">
+                                 <h1>OUR COURSES</h1>
+                        </div>
+                        
+                    {{!-- </div> --}}
+                </div>
+        </div>
+
+        {{!-- courses --}}
+
+         {{!-- <div class="cources container text-center" style="margin-top:230px;"> --}}
+{{!--         
+        <div>
+            <div class="row ">
+                <div class="col" style="margin-left:40px;">
+                    <div class="card h-100">
+                        <img src="/images/courses1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">The best computer science courses at the undergraduate level are BTech CSE, BSc in Computer Science, etc. Whereas, the best computer science courses at the postgraduate level are MSc in Computer Science and MTech CSE.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$140</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin-right: 10px;">
+                    <div class="card h-100">
+                        <img src="/images/courses2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Business</h5>
+                            <p class="card-text">The course aims to provide the strategic framework for understanding and manage marketing strategies in the digital marketplace. A focus is made on the social Internet as a phenomenon and social media as a tool.
+                                </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$180</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin-left: -20px;">
+                    <div class="card h-100">
+                        <img src="/images/courses3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Architecture Design</h5>
+                            <p class="card-text">ntroduces concepts, theories, and practices of the discipline of architecture. Includes study of perceptual, environmental, technical and organizational concepts through lectures and individual projects in observing architectural spaces and forms.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$120</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top:50px ;">
+                <div class="col" style="margin-left:40px;">
+                    <div class="card h-100">
+                        <img src="/images/courses4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Medical Technology</h5>
+                            <p class="card-text"> The Medical Technology program prepares students for advanced studies such as a Master of Science. The purpose of study and research is to prevent or treat illnesses.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$230</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin-right: 10px;">
+                    <div class="card h-100">
+                        <img src="/images/courses5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Microsoft Azure</h5>
+                            <p class="card-text">Microsoft Azure, formerly known as Windows Azure, is Microsoft's public cloud computing platform. It provides a broad range of cloud services, including compute, analytics, storage and networking.
+                                </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$460</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin-left: -20px;">
+                    <div class="card h-100">
+                        <img src="/images/courses6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Android Apps</h5>
+                            <p class="card-text">In the Android Developer Fundamentals course, you learn basic Android programming concepts and build a variety of apps, using the Java programming language.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$520</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> --}}
+
+        <table style="margin-left:130px ;margin-top:180px;">
+         <tbody>
+             {{#each course_data}}
+                <tr class="c-td">
+                  <td>
+                       <div class="course-main">
+                        
+                          <img src="/course_img/{{this.Profile_Picture}}" alt="">
+                            <h3>{{this.Course_name}}</h3>
+                            <p>Starting date : {{this.Starting_date}}</p>
+                            <p>Duration : {{this.Course_duration}}</p>
+                            <p>Professor : {{this.Professor_name}}</p>
+                            <p>Fees : {{this.Course_price}} Rs.</p>
+                
+                         </div>
+                  </td>           
+              </tr>
+                
+             {{/each}} 
+         </tbody>
+      </table>
+
+    </div>
+    
+    {{>footer}}
+
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>

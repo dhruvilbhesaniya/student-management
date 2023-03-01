@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class=" no-htmlimports">
+
+<head>
+    {{>header}}
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+       
+</head>
+
+
+<body>
+
+    {{!-- nevbar --}}
+
+    {{>nevbar}}
+   
+    {{!-- said bar --}}
+
+ <div class="set_card_container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators" >
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                     aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/slide1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>The Best University</h1>
+                            <p>Many colleges and universities have designated mottos that represent the culture of that
+                                institution identify themselves in a few words.</p>
+                            <button><a href="ragistetion">Ragistetion</a></button>
+                        </div>
+                    </div>
+                        <div class="carousel-item">
+                            <img src="/images/slide2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Education For Better</h1>
+                                <p>Many colleges and universities have designated mottos that represent the culture of that
+                                    institution identify themselves in a few words.</p>
+                                <button><a href="ragistetion">Ragistetion</a></button>
+                            </div>
+                        </div>
+        
+                        <div class="carousel-item">
+                            <img src="/images/slide3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Achieving Knowledge</h1>
+                                <p>Many colleges and universities have designated mottos that represent the culture of that
+                                    institution identify themselves in a few words.</p>
+                                <button><a href="ragistetion">Ragistetion</a></button>
+                            </div>
+                        </div>
+    
+             </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            
+         </div>
+ </div>  
+
+    {{!-- card --}}
+    <div class="all-card d-flex justify-content-evenly">
+        <div class="c-1 one">
+            <i class="fas fa-book-open"></i>
+            <h3 class="cr">Courses</h3>
+        </div>
+        <div class="c-2 one">
+            <i class="fas fa-magic"></i>
+            <h3 class="cr">Events</h3>
+        </div>
+        <div class="c-3 one">
+            <i class="fas fa-images"></i>
+            <h3 class="cr">Gallery</h3>
+        </div>
+        <div class="c-4 one">
+            <i class="fas fa-book"></i>
+            <h3 class="cr">Library</h3>
+        </div>
+
+    </div>
+
+    {{!-- Welcome to our campus --}}
+    <div class="space container">
+    
+        <div class="about-campus  d-flex .flex-wrap">
+    
+            <div class="campus_text w-50">
+                <h1>Welcome to our campus</h1>
+                
+                <p>A campus is traditionally the land on which a college or university and related institutional
+                    buildings are situated. Usually a college campus includes libraries, lecture halls, residence halls,
+                    student centers or dining halls, and park-like settings.</p>
+    
+                <button> Read More -></button>
+            </div>
+            <div class="campus_img w-50 d-flex">
+    
+                <div class="firts_img">
+                    <img src="/images/about01.jpg" alt="capmuse-img" />
+                </div>
+    
+                <div class="other_img">
+                    <img src="/images/about02.jpg" alt="capmuse-img" />
+                    <img src="/images/about03.jpg" alt="capmuse-img" />
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    
+    </div>
+    {{!-- corses --}}
+
+    {{!-- <div class="cources container text-center"> --}}
+        <div>
+            {{!-- <h1 class="courese"> Our Courses </h1> --}}
+            
+        </div>
+        {{!-- <div>
+            <div class="row ">
+                <div class="col" style="margin-left:40px;">
+                    <div class="card h-100">
+                        <img src="/images/courses1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text">The best computer science courses at the undergraduate level are BTech CSE, BSc in Computer Science, etc. Whereas, the best computer science courses at the postgraduate level are MSc in Computer Science and MTech CSE.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$140</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin-right: 10px;">
+                    <div class="card h-100">
+                        <img src="/images/courses2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Business</h5>
+                            <p class="card-text">The course aims to provide the strategic framework for understanding and manage marketing strategies in the digital marketplace. A focus is made on the social Internet as a phenomenon and social media as a tool.
+                                </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$180</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="margin-left: -20px;">
+                    <div class="card h-100">
+                        <img src="/images/courses3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Architecture Design</h5>
+                            <p class="card-text">ntroduces concepts, theories, and practices of the discipline of architecture. Includes study of perceptual, environmental, technical and organizational concepts through lectures and individual projects in observing architectural spaces and forms.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-renk">$120</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+        {{!-- <table style="margin-left:130px ;margin-top:30px;">
+         <tbody>
+             {{#each course_data}}
+                <tr class="c-td">
+                    {{#if course_data.Course_popular == course_data.Course_populer }}
+                                {{ TODO: output each user data}}
+                        {{else}}
+                            <td>
+                                <div class="course-main">
+                                    
+                                    <img src="/course_img/{{this.Profile_Picture}}" alt="">
+                                        <h3>{{this.Course_name}}</h3>
+                                        <p>Starting date : {{this.Starting_date}}</p>
+                                        <p>Duration : {{this.Course_duration}}</p>
+                                        <p>Professor : {{this.Professor_name}}</p>
+                                        <p>Fees : {{this.Course_price}} Rs.</p>
+                            
+                                    </div>
+                            </td> 
+                    {{/if}}                  
+                 </tr>
+                
+             {{/each}} 
+         </tbody>
+      </table> --}}
+
+    </div>
+
+
+    {{!-- event --}}
+
+ <div class="container text-center ">
+         <div class="event">  
+        <div class="row">
+            <div>
+                <h1>Eventes </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card1 mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 w-40">
+                            <img  src="/images/event1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title1">Business Conference</h5>
+                                <p class="card-text1">A business conference is held for people working in the same company or industry. They come together to discuss new trends and opportunities pertaining to the business</p>
+                                <p class="card-text"><small class="text-muted">Speaker : John Sminth</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card2 mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/event2.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title1">Craft Workshops</h5>
+                                <p class="card-text1">A craft workshop is hosted by a craft tutor to share and teach others about their skill in a certain craft, such as pottery, sewing and many more.</p>
+                                <p class="card-text"><small class="text-muted">Speaker : Alexa Zone</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="card3 mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/event3.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title1">Mentorship Program</h5>
+                                <p class="card-text1">A mentoring program is a way for organisations to give employees the opportunity to be a mentor or receive mentorship from a senior leader.</p>
+                                <p class="card-text"><small class="text-muted">Speaker : Avil Mex</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="card4 mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/event4.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title1">Technical Events</h5>
+                                <p class="card-text1">Technical Event. A technical event defines the drivers of the business at the technical level; the things that result in business activity starting or modifying the business process. </p>
+                                <p class="card-text"><small class="text-muted">Speaker : Venil Monts</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             </div>
+       </div>
+    </div> 
+
+    {{>footer}}
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

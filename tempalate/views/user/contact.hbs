@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    {{!-- <link rel="stylesheet" href="css/style.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="contact">
+    
+     {{>nevbar}}
+
+        <div class="carousel-inner1">
+            <div class="carousel-item1 active">
+                    <img src="/images/slide2.jpg" class="d-block w-100" alt="...">
+                    {{!-- <div class="carousel-caption d-none d-md-block"> --}}
+                       
+                        <div class="carousel">
+                                 <h1>CONTACT US</h1>
+                        </div>
+                        
+                    {{!-- </div> --}}
+                </div>
+        </div>
+
+    {{!-- contact us  --}}
+
+        
+          <div class="container">
+                <div class="msg">
+                    <p>Send Your Message</p>
+                </div>
+
+                    <form method="" action="">
+                        
+                        <div class="f1">
+                            
+                         <input  type="text" name="name" placeholder="Your Name:">
+                          <input type="text" name="phone" placeholder="Telephone:">
+                        </div>
+
+                        <div class="f2">
+                                <input type="text" name="email" placeholder="Email:">
+                        </div>
+
+                        <div class="f3">
+                                 <textarea name="message" rows="7" placeholder="Message:"></textarea>
+                        </div>
+
+                        <div class="submit-btn">
+                            <button type="submit">Submit comment</button>
+                        </div>
+
+
+                    </form>
+{{!--             
+                <div class="row">
+                    <div class="col-lg-8 center-col">
+                        <form method="post" action="#!">
+                            <input type="hidden" name="form-type" value="contact">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" placeholder="Your Name:">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" placeholder="Telephone:">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" name="email" placeholder="Email:">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" rows="7" placeholder="Message:"></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="butn">Submit comment <i
+                                            class="fas fa-long-arrow-alt-right margin-10px-left"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> --}}
+            </div>    
+           {{>footer}}
+        
+</body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>

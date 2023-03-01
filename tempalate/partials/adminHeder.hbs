@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     {{>adminHead}}
+</head>
+<body>
+    
+  {{!-- user manage --}}
+  
+     <div class="main-user">
+            <div class="c">
+             
+        <!-- The dropdown starts here... -->
+        <div class="dd">
+            {{!-- <div class="admin-p">
+                  <img src="/images/profile1.jpg" alt="">
+            </div> --}}
+            <div class="dd-a">              
+                <span>{{name}}</span>
+            </div>
+          <input type="checkbox">
+          <div class="dd-c">
+            <ul>
+              <li><a href="#"><span>Profile</span></a></li>
+              <li><a href="/admin/logout"><span>Logout</span></a></li>
+              {{!-- <li><a href="#"><span>Link</span></a></li>
+              <li><a href="#"><span>Link</span></a></li> --}}
+            </ul>
+          </div>
+        </div>
+        <!-- ...and ends here. -->
+      </div>
+     </div>
+</body>
+</html>
